@@ -1,0 +1,144 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Build a Survey Form using HTML and CSS</title>
+  </head>
+
+  <body>
+    <h1>Survey Form</h1>
+
+    <!-- Create Form -->
+    <form id="form" class="form-control">
+      <div class="container-fluid">
+        <div class="box">
+          Name :
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter Your Name"
+          />
+        </div>
+        <div class="box">
+          E-mail :
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter Your Email"
+          />
+        </div>
+        <div class="box">
+          D.O.B :
+          <input type="date" name="age" class="form-control" id="age" />
+        </div>
+        <div class="profession">
+          Which option best describe you :
+          <select
+            name="profession"
+            class="form-select"
+            aria-label="Default select example"
+            id="profession"
+          >
+            <option value="student">student</option>
+            <option value="graduet">graduet</option>
+            <option value="employee">employee</option>
+            <option value="business">business</option>
+          </select>
+        </div>
+        <div class="recom">
+          Would you recommend this org. to a friend ? <br />
+          <input
+            type="radio"
+            class="form-check-input"
+            name="recommend"
+            id="yes"
+            value="recommend"
+          />
+          <label for="yes" class="form-check-label">Yes</label> <br />
+          <input
+            type="radio"
+            class="form-check-input"
+            name="recommend"
+            id="no"
+            value="recommend"
+          />
+          <label for="no" class="form-check-label">No</label> <br />
+          <input
+            type="radio"
+            class="form-check-input"
+            name="recommend"
+            id="maybe"
+            value="recommend"
+          />
+          <label for="recommend" class="form-check-label">May be</label>
+        </div>
+        <br />
+        <div class="check">
+          Language and framework known : (Check all that apply)<br />
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="clang"
+              id="defaultCheck1"
+            />
+            <label class="form-check-label" for="defaultCheck1">
+              C Language
+            </label>
+          </div>
+          <br />
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="lang"
+            id="clang"
+            value="clang"
+          />
+          <label for="clang" class="form-check-label">C++</label> <br />
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="lang"
+            id="clang"
+            value="clang"
+          />
+          <label for="clang" class="form-check-label">JavaScript</label> <br />
+          <input
+            type="checkbox"
+            class="form-check-input"
+            name="lang"
+            id="clang"
+            value="clang"
+          />
+          <label for="clang" class="form-check-label">React</label> <br />
+        </div>
+        <br />
+        <div class="comment">
+          <label for="comment">Any comment or suggestion ?</label> <br />
+          <textarea
+            name="comment"
+            class="form-control"
+            id="comment"
+            cols="40"
+            rows="10"
+          ></textarea>
+          <br />
+        </div>
+        <button type="submit" class="btn">Submit</button>
+        <button type="cancel" class="btn">Cancel</button>
+      </div>
+    </form>
+  </body>
+</html>
