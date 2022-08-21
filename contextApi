@@ -1,0 +1,64 @@
+// context api / useContext Hook
+
+
+//Index.js
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+
+import App from "./App";
+
+const rootElement = document.getElementById("root");
+const root = createRoot(rootElement);
+
+root.render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
+
+
+
+//App.js
+import User from "./User";
+import {ThemeContext} from './Context.js';
+import "./styles.css";
+
+export default function App() {
+  return (
+    <div className="App">
+      <h1>Hello Context</h1>
+        <ThemeContext.Provider value='new value'>
+          <User />
+        </ThemeContext.Provider>
+    </div>
+  );
+}
+
+
+
+//User.js
+import React from "react";
+import { ThemeContext } from "./Context";
+
+const User = () => {
+
+  return (
+    <div>
+      <h4>user data</h4>
+      <ThemeContext.Consumer>
+          {
+            (data) => {console.log(data);
+            }
+          }
+        </ThemeContext.Consumer>
+    </div>
+  )
+}
+export default User;
+
+
+
+//Context.js
+import React from "react";
+
+export const ThemeContext = React.createContext('Dark Theme');
