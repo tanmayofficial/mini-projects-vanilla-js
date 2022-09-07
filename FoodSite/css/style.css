@@ -1,0 +1,153 @@
+/* TABLE OF CONTENT */
+/* 
+1. General section
+2. Navbar section
+3. Banner section
+4. Counter section
+5. About section
+6. Story section
+7. Food section
+8. Testimonials section
+9. Team section
+10. Book Food
+11. Footer
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap');
+
+
+/* VARIABLES for common element */
+:root{
+    --primary-color: #3755ff;
+    --secondary-color: #0d1336;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-primary: #3755ff;
+    --text-secondary: #0d1336;
+    --text-white: #fff;
+    --text-black: #000;
+    --text-grey: grey;
+    --text-light: lightgrey;
+}
+
+/* Custom css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--primary-color);
+}
+
+h1{
+    font-size: 3.2rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+    color: var(--text-secondary);
+    text-transform: capitalize;
+}
+h2{
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--text-secondary);
+    text-transform: capitalize;
+}
+h4{
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: .6rem;
+    color: var(--text-secondary);
+    text-transform: capitalize;
+}
+p{
+    font-size: 1rem;
+    color: var(--text-light);
+    font-weight: 400;
+    line-height: 1.7rem;
+    letter-spacing: .06rem;
+}
+.wrapper{
+    padding-top: 6.2rem;
+    padding-bottom: 6.2rem;
+}
+.text-content{
+    width: 70%;
+    margin: 0 auto;
+}
+.counter_section h2,
+.testimonial_section h2,
+.book_food_text h2{
+    color: var(--text-primary);
+}
+
+/* Navbar section */
+.navigation_wrap{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+      background-image: linear-gradient(to bottom right, rgb(0, 38, 255), rgb(0, 183, 255));
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
+.navigation_wrap .navbar-brand img{
+    width: 12rem;
+}
+.navigation_wrap .nav-item{
+    padding: 0 0.6rem;
+    transition: all 200ms linear;
+}
+.navigation_wrap .navbar-toggler:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+.navigation_wrap .nav-link {
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: var(--text-secondary);
+    letter-spacing: .06rem;
+}
+.navigation_wrap .nav-link:hover {
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #0d133656;
+    color: var(--text-white);
+}
+
+
+
+/* change navbar style on scroll */
+
+/* Banner section */
+
